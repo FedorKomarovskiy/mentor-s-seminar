@@ -1,1 +1,14 @@
+Настроено подключение по SSH:
+1. Проверка подключения:
+$ ssh -T git@github.com
+Вывод:
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+2. Настроен удалённый репозиторий на работу по SSH:
+$ git remote -v
+Вывод:
+origin  git@github.com:username/repository.git (fetch)
+origin  git@github.com:username/repository.git (push)
+
+Все операции push и pull выполняются через SSH.
 This is a test file
